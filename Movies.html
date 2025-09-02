@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke & Popcorn - Book Your Cinema Tickets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .notification-button.active {
+            background-color: white;
+            color: #22c55e; /* green-500 */
+            border: 2px solid #22c55e;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-indigo-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">Coke & Popcorn</h1>
+            <div class="space-x-4">
+                <a href="#" class="text-white hover:text-gray-200">Home</a>
+                <a href="#" class="text-white hover:text-gray-200">Movies</a>
+                <a href="#" class="text-white hover:text-gray-200">Cinemas</a>
+                <a href="#" class="text-white hover:text-gray-200">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-blank-movie-ticket-with-popcorn-bucket-filmstrip-clapperboard-and-camera-in-image_3623915.jpg" alt="Movie Banner" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center">
+                <h2 class="text-white text-4xl font-bold mb-4">Book Your Movie Tickets</h2>
+                <p class="text-white text-xl mb-8">Experience the magic of cinema in your favorite theaters</p>
+                <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Now Showing Section -->
+    <div class="container mx-auto py-12">
+        <h3 class="text-2xl font-bold mb-8 text-center">Now Showing</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Movie Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <div class="aspect-w-3 aspect-h-4">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/prabhas-kalki-2898-ad-review-271733153-3x4.jpg?VersionId=8ELILJAkGknTSUvm.cYOt2KWXPWWF.h1" alt="Movie 1" class="w-full h-full object-cover"/>
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2">Kalki 2898 AD</h4>
+                    <p class="text-gray-600 mb-4">Sci-fi, Action • 2h 50m</p>
+                    <button class="mt-auto w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">
+                        Book Tickets
+                    </button>
+                </div>
+            </div>
+
+            <!-- Movie Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <div class="aspect-w-3 aspect-h-4">
+                    <img src="https://www.telugubulletin.com/wp-content/uploads/2025/01/Daaku-Maharaj-Movie-Review-600x800.jpeg" alt="Movie 2" class="w-full h-full object-cover"/>
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2">Daaku Maharaj</h4>
+                    <p class="text-gray-600 mb-4">Action, Drama • 2h 35m</p>
+                    <button class="mt-auto w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">
+                        Book Tickets
+                    </button>
+                </div>
+            </div>
+
+            <!-- Movie Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <div class="aspect-w-3 aspect-h-4">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDy3eua9GEr2PNnGrW2hM7OmmhbcihhOv1ObFEL09sseJRIoWWqAhai_TFFteqtA38jVdwkw" alt="Movie 3" class="w-full h-full object-cover"/>
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2">They Call Him OG</h4>
+                    <p class="text-gray-600 mb-4">Action, Crime • 2h 45m</p>
+                    <button class="mt-auto w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">
+                        Book Tickets
+                    </button>
+                </div>
+            </div>
+
+            <!-- Movie Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <div class="aspect-w-3 aspect-h-4">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Sankranthikivas-be353f20-9b34-11ef-bc46-4b10ec9d0304.jpg?format=webp" alt="Movie 4" class="w-full h-full object-cover"/>
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-bold mb-2">Sankranthiki Vasthunam</h4>
+                    <p class="text-gray-600 mb-4">Comedy, Family • 2h 30m</p>
+                    <button class="mt-auto w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">
+                        Book Tickets
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+         <!-- Coming Soon Section -->
+    <div class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold mb-8 text-center">Coming Soon</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Coming Soon Movie 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-[500px]">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGJlMTM2OWUtYTQwNy00YmM3LTlkOTctMDBjY2ExN2JjY2UzXkEyXkFqcGc@._V1_.jpg" alt="Coming Soon 1" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h4 class="font-bold mb-2">HIT:THE THIRD CASE</h4>
+                        <p class="text-gray-600 mb-4">Release Date: MAY, 2025</p>
+                        <button class="notification-button w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors duration-300">
+                            Get Notified
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Movie 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-[500px]">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://assetscdn1.paytm.com/images/cinema/MassJathara-galery-e9c1e380-9ab9-11ef-a547-a3a8f57842ad.jpg" alt="Coming Soon 2" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h4 class="font-bold mb-2">MASS JATHARA</h4>
+                        <p class="text-gray-600 mb-4">Release Date: MAY, 2025</p>
+                        <button class="notification-button w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors duration-300">
+                            Get Notified
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Movie 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-[500px]">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.filmibeat.com/ph-big/2024/11/thandel-release-date-announced-cast-crew-plot-and-more-about-naga-chaitanya-sai-pallavis-upcoming-romance-drama1730900867_1.jpg" alt="Coming Soon 3" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h4 class="font-bold mb-2">THANDEL</h4>
+                        <p class="text-gray-600 mb-4">Release Date: FEB, 2025</p>
+                        <button class="notification-button w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors duration-300">
+                            Get Notified
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       <!-- Footer -->
+       <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold mb-4">About MovieTix</h4>
+                <p>Your one-stop destination for movie tickets booking.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Add click event listeners to all notification buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const notificationButtons = document.querySelectorAll('.notification-button');
+            
+            notificationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Toggle the active class
+                    this.classList.toggle('active');
+                    
+                    if (this.classList.contains('active')) {
+                        // Change button text when active
+                        this.textContent = 'Notifications On';
+                        this.classList.remove('bg-green-500', 'hover:bg-green-600');
+                    } else {
+                        // Revert button text when inactive
+                        this.textContent = 'Get Notified';
+                        this.classList.add('bg-green-500', 'hover:bg-green-600');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Additional Tailwind Plugin for Aspect Ratio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/plugins/aspect-ratio.min.js"></script>
+</body>
+</html>
